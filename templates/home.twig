@@ -1,0 +1,33 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<strong>{% trans %}bwDescription{% endtrans %}</strong><br />
+
+{% if sessOK %}
+<p>{% if sessLastLogin %}{% trans %}userWelcomeMessageLastConnected{% endtrans %}{% else %}{% trans %}userWelcomeMessage{% endtrans %}{% endif %}</p>
+<p>{% trans %}homeInstructions{% endtrans %}</p>
+{% else %}
+<p>{% trans %}homeInstructions{% endtrans %}</p>
+<div style="width: 300px; margin-left: auto; margin-right: auto; text-align: center">
+    {% include 'login_form.twig' %}
+</div>
+{%  endif %}
+<!-- Images preloading -->
+<img src="{{ thmasset('img/add.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/edit.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/edit_big.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/edit_not.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/gift_bought.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/gift_buy.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/gift_received.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/new.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/surprise.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/options.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/delete.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/logout.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/delete.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/exclamation.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/print.png') }}" style="display:none" alt="" />
+<img src="{{ thmasset('img/pdf.png') }}" style="display:none" alt="" />
+{% endblock %}

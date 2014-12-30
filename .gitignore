@@ -1,0 +1,6 @@
+!.gitignore
+/vendor/
+composer.lock
+/app/config/database.yml
+/app/cache/*
+/app/logs/*

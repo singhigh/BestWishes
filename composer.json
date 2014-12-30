@@ -1,0 +1,32 @@
+{
+  "name": "kissifrot/bestwishes",
+  "description": "Multilanguage wishlist application",
+  "type": "project",
+  "keywords": ["wishlist", "gifts"],
+  "homepage": "https://github.com/kissifrot/BestWishes",
+  "authors": [
+    {
+      "name": "Philippe Villiers",
+      "email": "kissifrot@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"BestWishes\\": "src/BestWishes/"}
+  },
+  "require": {
+    "silex/silex": "~2.0@dev",
+    "doctrine/dbal": "~2.2",
+    "twig/twig": ">=1.8.0,<2.0-dev",
+    "symfony/twig-bridge": "~2.4",
+    "symfony/security": "~2.4",
+    "swiftmailer/swiftmailer": "5.*",
+    "symfony/monolog-bridge": "~2.4",
+    "silex/web-profiler": "~2.0@dev",
+    "symfony/translation": "~2.4",
+    "symfony/config": "~2.4",
+    "symfony/yaml": "~2.4",
+    "rev42/tfpdf": "1.24",
+    "mobiledetect/mobiledetectlib": "~2.8"
+  }
+}

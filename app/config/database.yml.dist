@@ -1,0 +1,6 @@
+host: localhost
+driver: pdo_mysql
+dbname: 
+user: 
+password: 
+charset: utf8

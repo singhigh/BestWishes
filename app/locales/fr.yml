@@ -1,0 +1,5 @@
+bwDescription: Management/visualization of wishlists
+userWelcomeMessage: Welcome <b>%username%</b>
+userWelcomeMessageLastConnected: Welcome <b>%username%</b>, your last visit was on %sessLastLogin%
+homeInstructions: Choose a list to show in the left menu
+homeInstructions: Choose a list to show in the left menu
